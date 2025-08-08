@@ -4,8 +4,8 @@ Mi portfolio personal
 Planificación:
     1) Esqueleto, estructura base ✅
     2) Completar contenido secciones (simple)
-        2.1) Navbar y Footer
-        2.2) Card inicio
+        2.1) Navbar y Footer ✅
+        2.2) Card inicio ✅
         2.3) Proyectos
         2.4) Servicios
         2.5) Sobre Mi

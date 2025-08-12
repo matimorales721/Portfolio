@@ -1,5 +1,5 @@
 # Portfolio
-Mi portfolio personal
+Mi portfolio personal ✅
 
 Planificación:
     1) Esqueleto, estructura base ✅
@@ -11,6 +11,6 @@ Planificación:
         2.5) Sobre Mi ✅
     3) Responsive ✅
     4) Laburar CSS para que se vea bonito ✅
-    5) Agregar animaciones
-    6) Laburar más los CSS para que se vea aun más bonito 
-    7) Fin.    
+    5) Agregar animaciones ✅
+    6) Laburar más los CSS para que se vea aun más bonito ✅ (ponele)
+    7) Fin. ✅

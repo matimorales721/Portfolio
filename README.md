@@ -9,7 +9,8 @@ Planificación:
         2.3) Proyectos ✅
         2.4) Servicios ✅
         2.5) Sobre Mi ✅
-    3) Responsive
-    4) Laburar CSS para que se vea bonito
+    3) Responsive ✅
+    4) Laburar CSS para que se vea bonito ✅
     5) Agregar animaciones
-    6) Fin.    
+    6) Laburar más los CSS para que se vea aun más bonito 
+    7) Fin.    

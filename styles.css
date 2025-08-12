@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: rgb(211, 255, 255);
 }
 
 header {
@@ -53,6 +54,14 @@ nav ul li a {
 }
 
 
+
+@media (max-width: 767px) {
+  nav ul li{
+    display: block;
+  }
+}
+
+
 main {
   flex: 1;
 }
@@ -64,30 +73,47 @@ main {
 }
 
 #inicio {
-  background: rgb(107, 182, 182);
-  padding: 1rem;
+  background: rgba(47, 79, 79, 0.897);
   margin-bottom: 2rem;
-  max-width: 320px;
+  max-width: 900px;
+  width: 100%;
   justify-self: center;
+}
+
+
+
+@media (max-width: 980px) {
+  #inicio {
+    max-width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .card img {
   max-width: 100%;
   height: 100px;
-  margin-left: 10px;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
   border-radius: 50%;
+  border: #fff 2px solid;
 }
 
 #proyectos {
-  background: #ceae21;
+  background: #ddc96d;
   padding: 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #proyectos .galeria {
@@ -96,6 +122,13 @@ main {
   grid-template-rows: repeat(2, 200px);
   gap: 1rem;
   padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  #proyectos .galeria {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #proyectos .imagen {
@@ -121,7 +154,8 @@ main {
 }
 
 #servicios {
-  background: #d1d1d1;
+  background: #b6f080;
+  color: #365816;
   padding: 1rem;
   margin-bottom: 2rem;
   min-height: 300px;
@@ -140,11 +174,12 @@ main {
 
 #servicios .tarjeta-3d {
   position: relative;
-  width: 300px;
-  perspective: 1000px;
-  height: -webkit-fill-available;
+  width: 200px;
   min-height: 230px;
-  margin-right: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #servicios .tarjeta-frente,
@@ -154,22 +189,23 @@ main {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   transition: transform 0.6s ease;
 }
 
 #servicios .tarjeta-frente {
-  background-color: #007bff;
+  background-color: #538524;
   color: white;
   transform: rotateY(0deg);
 }
 
 #servicios .tarjeta-dorso {
-  background-color: #28a745;
+  background-color: #538524;
   color: white;
   transform: rotateY(180deg);
 }
@@ -183,13 +219,69 @@ main {
 }
 
 #sobremi {
-  background: #c01880;
+  background: #189ec0;
   padding: 1rem;
   margin-bottom: 2rem;
 }
 
-#contacto {
-  background: #0cd358;
+#sobremi h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#sobremi p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#eventos {
+  background: #df3ca0;
   padding: 1rem;
   margin-bottom: 2rem;
+}
+
+#eventos .tituloEvento {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#eventos .listaEventos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#eventos .evento {
+  background: #df8dbf;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #da0287;
+  min-width: 250px; /* pienso que con el responsive andaria bien */
+  width: calc(33.333% - 2rem);
+}
+#eventos .evento img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}
+
+#eventos .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+#eventos .imagen:hover img {
+  transform: scale(1.1);
+}
+
+#contacto {
+  background: #d9e43f;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #373a15;
 }
